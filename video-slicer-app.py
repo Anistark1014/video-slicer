@@ -101,7 +101,7 @@ if st.button("Cut Video"):
         # Save the uploaded file to a temporary location
         uploaded_video_path = "uploaded_video.mp4"
         with open(uploaded_video_path, "wb") as f:
-            f.write(uploaded_file.getbuffer())
+            f.write(uploaded_file.getbuffer()) 
 
         # Extract base name of the uploaded video (without extension)
         base_name = os.path.splitext(uploaded_file.name)[0]
